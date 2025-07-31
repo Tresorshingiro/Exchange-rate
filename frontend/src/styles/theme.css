@@ -1,0 +1,255 @@
+/* Custom Orange Theme for Currency Exchange App */
+
+:root {
+  --primary-orange: #ff6b35;
+  --primary-orange-dark: #e55a2e;
+  --primary-orange-light: #ff8557;
+  --primary-orange-lighter: #ffa579;
+  --secondary-orange: #ff9447;
+  --accent-orange: #ff4500;
+  --warning-orange: #ff8c00;
+  --text-dark: #2c3e50;
+  --border-light: #e9ecef;
+}
+
+/* Override Bootstrap primary colors */
+.btn-primary {
+  background-color: var(--primary-orange) !important;
+  border-color: var(--primary-orange) !important;
+  color: white !important;
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-orange-dark) !important;
+  border-color: var(--primary-orange-dark) !important;
+}
+
+.btn-primary:focus,
+.btn-primary.focus {
+  box-shadow: 0 0 0 0.2rem rgba(255, 107, 53, 0.25) !important;
+}
+
+.btn-primary:disabled {
+  background-color: var(--primary-orange-lighter) !important;
+  border-color: var(--primary-orange-lighter) !important;
+}
+
+.btn-outline-primary {
+  color: var(--primary-orange) !important;
+  border-color: var(--primary-orange) !important;
+}
+
+.btn-outline-primary:hover {
+  background-color: var(--primary-orange) !important;
+  border-color: var(--primary-orange) !important;
+  color: white !important;
+}
+
+/* Background colors */
+.bg-primary {
+  background-color: var(--primary-orange) !important;
+}
+
+.bg-light {
+  background-color: #f8f9fa !important;
+}
+
+/* Text colors */
+.text-primary {
+  color: var(--primary-orange) !important;
+}
+
+/* Badges */
+.badge.bg-primary {
+  background-color: var(--primary-orange) !important;
+}
+
+.badge.bg-secondary {
+  background-color: var(--secondary-orange) !important;
+}
+
+.badge.bg-success {
+  background-color: #28a745 !important;
+}
+
+.badge.bg-info {
+  background-color: #17a2b8 !important;
+}
+
+.badge.bg-warning {
+  background-color: var(--warning-orange) !important;
+  color: white !important;
+}
+
+/* Cards */
+.card {
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+  border: 1px solid rgba(0, 0, 0, 0.125) !important;
+}
+
+.card-header {
+  background-color: #f8f9fa !important;
+  border-bottom: 1px solid var(--border-light) !important;
+}
+
+/* Navigation tabs */
+.nav-tabs .nav-link.active {
+  background-color: var(--primary-orange) !important;
+  border-color: var(--primary-orange) var(--primary-orange) transparent !important;
+  color: white !important;
+}
+
+.nav-tabs .nav-link:hover {
+  border-color: var(--primary-orange-light) var(--primary-orange-light) transparent !important;
+  color: var(--primary-orange) !important;
+}
+
+/* Forms */
+.form-control:focus {
+  border-color: var(--primary-orange-light) !important;
+  box-shadow: 0 0 0 0.2rem rgba(255, 107, 53, 0.25) !important;
+}
+
+.form-select:focus {
+  border-color: var(--primary-orange-light) !important;
+  box-shadow: 0 0 0 0.2rem rgba(255, 107, 53, 0.25) !important;
+}
+
+/* Hero section */
+.hero-section {
+  background: linear-gradient(135deg, var(--primary-orange) 0%, var(--primary-orange-dark) 100%) !important;
+}
+
+/* Landing page cards */
+.features-section .card:hover {
+  transform: translateY(-2px);
+  transition: transform 0.2s ease-in-out;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+
+/* Dashboard welcome card */
+.dashboard .card.bg-primary {
+  background: linear-gradient(135deg, var(--primary-orange) 0%, var(--primary-orange-dark) 100%) !important;
+}
+
+/* Statistics cards */
+.user-stats .card.bg-primary {
+  background-color: var(--primary-orange) !important;
+}
+
+.user-stats .card.bg-success {
+  background-color: #28a745 !important;
+}
+
+.user-stats .card.bg-info {
+  background-color: #17a2b8 !important;
+}
+
+.user-stats .card.bg-warning {
+  background-color: var(--warning-orange) !important;
+}
+
+/* Profile avatar */
+.bg-primary.rounded-circle {
+  background-color: var(--primary-orange) !important;
+}
+
+/* Quick rates section */
+.quick-rates .border-bottom {
+  border-bottom: 1px solid var(--border-light) !important;
+}
+
+/* Conversion result */
+.currency-converter .bg-light.rounded {
+  background-color: #f8f9fa !important;
+  border-left: 4px solid var(--primary-orange);
+}
+
+/* Exchange rate cards */
+.exchange-rates .card.border-0.bg-light:hover {
+  background-color: var(--primary-orange-lighter) !important;
+  color: var(--text-dark) !important;
+  transition: background-color 0.2s ease-in-out;
+}
+
+/* List group items */
+.list-group-item:hover {
+  background-color: #f8f9fa !important;
+}
+
+/* Spinners */
+.spinner-border {
+  color: var(--primary-orange) !important;
+}
+
+.btn-primary .spinner-border {
+  color: white !important;
+}
+
+/* Alerts */
+.alert-danger {
+  color: #721c24;
+  background-color: #f8d7da;
+  border-color: #f5c6cb;
+}
+
+/* Custom animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-up {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .hero-section h1 {
+    font-size: 2rem !important;
+  }
+  
+  .features-section .card {
+    margin-bottom: 1rem;
+  }
+}
+
+/* Feature cards and interactive elements */
+.feature-card {
+  transition: all 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15) !important;
+}
+
+.feature-icon {
+  transition: transform 0.3s ease;
+}
+
+.feature-card:hover .feature-icon {
+  transform: scale(1.1);
+}
+
+.stat-card {
+  transition: all 0.3s ease;
+  border-left: 4px solid var(--primary-color);
+}
+
+.stat-card:hover {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+}
+
+/* Loading and Animation States */
+.loading-overlay {
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(2px);
+}
